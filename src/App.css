@@ -1,0 +1,154 @@
+*{
+  list-style-type: none;
+  border: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  background-color: rgb(5,41,46);
+  color: white;
+  background-image: url(https://fictionhorizon.com/wp-content/uploads/2023/10/rick-and-morty-season-7-release-date-and-time.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 1400px 300px;
+}
+
+.container-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 350px;
+}
+
+
+input{
+  height: 23px;
+  width: 180px;
+  padding: 13px;
+  text-align: center;
+  border-radius: 5px 0 0 5px;
+}
+
+button{
+  padding: 5px 10px;
+  background-color: rgb(113,168,33);
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.information{
+  display: inline-block;
+  background-color: rgb(6, 56, 63);
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 5px 20px 20px 20px;
+  margin-bottom: 50px;
+}
+
+.container-all-information{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.information h1{
+  color: rgb(113,168,33);
+  text-align: center;
+}
+
+.list-info{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.info-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.list-info li{
+  color: grey;
+}
+
+.list-info span{
+  color: white;
+  font-size: 1.1rem;
+}
+
+.app-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  place-items: center;
+}
+
+.content-resident{
+  background-color: rgb(7,34,38);
+  width: 280px;
+  border-radius: 10px;
+  padding-bottom: 10px;
+}
+
+.img-resident{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+figure{
+  position: relative;
+}
+
+figcaption{
+  background-color: rgb(6, 56, 63);
+  position: absolute;
+  top: 10%;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+  gap: 7px;
+}
+
+.circle{
+  background-color: grey;
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.title-name{
+  color: white;
+  font-size: 1.1rem;
+  border-bottom: 1px solid grey;
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.list-span{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.span{
+  color: grey;
+}
+
+.span-resident{
+  font-size: 1.1rem;
+}
+
+.Alive{
+ background-color: rgb(113,168,33);
+}
+
+.Dead{
+  background-color: red;
+}
+
