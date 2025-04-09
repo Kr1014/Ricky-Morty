@@ -1,108 +1,128 @@
-*{
+* {
   list-style-type: none;
   border: none;
   box-sizing: border-box;
   margin: 0;
 }
-body{
-  background-color: rgb(5,41,46);
+body {
+  background-color: rgb(5, 41, 46);
   color: white;
-  background-image: url(https://fictionhorizon.com/wp-content/uploads/2023/10/rick-and-morty-season-7-release-date-and-time.jpg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 1400px 300px;
 }
 
-.container-form{
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.containerImage {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 350px;
 }
 
+.containerImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
 
-input{
+.container-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+input {
   height: 23px;
   width: 180px;
   padding: 13px;
-  text-align: center;
+
   border-radius: 5px 0 0 5px;
 }
 
-button{
-  padding: 5px 10px;
-  background-color: rgb(113,168,33);
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: 5.5px 10px;
+  background-color: rgb(113, 168, 33);
   color: white;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 
-.information{
-  display: inline-block;
+.information {
+  display: flex;
   background-color: rgb(6, 56, 63);
   border-radius: 10px;
   margin-top: 50px;
-  padding: 5px 20px 20px 20px;
+  padding: 5px 20px 5px 20px;
   margin-bottom: 50px;
 }
 
-.container-all-information{
+.container-all-information {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.information h1{
-  color: rgb(113,168,33);
+.information h1 {
+  color: rgb(113, 168, 33);
   text-align: center;
 }
 
-.list-info{
+.list-info {
   display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
+  gap: 60px;
 }
 
-.info-item{
+.info-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
 }
 
-.list-info li{
+.list-info li {
   color: grey;
 }
 
-.list-info span{
+.list-info span {
   color: white;
   font-size: 1.1rem;
 }
 
-.app-container{
+.app-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
   place-items: center;
 }
 
-.content-resident{
-  background-color: rgb(7,34,38);
+.content-resident {
+  background-color: rgb(7, 34, 38);
   width: 280px;
   border-radius: 10px;
   padding-bottom: 10px;
 }
 
-.img-resident{
+.img-resident {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 
-figure{
+figure {
   position: relative;
 }
 
-figcaption{
+figcaption {
   background-color: rgb(6, 56, 63);
   position: absolute;
   top: 10%;
@@ -114,14 +134,14 @@ figcaption{
   gap: 7px;
 }
 
-.circle{
+.circle {
   background-color: grey;
   width: 15px;
   aspect-ratio: 1;
   border-radius: 50%;
 }
 
-.title-name{
+.title-name {
   color: white;
   font-size: 1.1rem;
   border-bottom: 1px solid grey;
@@ -130,25 +150,46 @@ figcaption{
   padding: 10px;
 }
 
-.list-span{
+.list-span {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.span{
+.span {
   color: grey;
 }
 
-.span-resident{
+.span-resident {
   font-size: 1.1rem;
 }
 
-.Alive{
- background-color: rgb(113,168,33);
+.Alive {
+  background-color: rgb(113, 168, 33);
 }
 
-.Dead{
+.Dead {
   background-color: red;
 }
 
+@media (min-width: 320px) and (max-width: 620px) {
+  .information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .list-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .loading {
+    position: absolute;
+    left: 38%;
+    top: 50%;
+  }
+}
